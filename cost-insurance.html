@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cost & Insurance | Dr. Taylor GP</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">Dr. Taylor GP</a>
+
+  <!-- Desktop Menu -->
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="booking.html">Book Appointment</a></li>
+    <li><a href="patient-portal.html">Patient Portal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-btn" id="closeMenu">&times;</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="booking.html">Book Appointment</a></li>
+    <li><a href="patient-portal.html">Patient Portal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<section class="section section-light">
+<h2>Cost & Insurance Details</h2>
+
+<div class="form-container card">
+
+<form action="process-insurance.php" method="POST">
+
+<div class="form-group">
+<label for="ci_fullname">Full Name</label>
+<input type="text" id="ci_fullname" name="fullname" required>
+</div>
+
+<div class="form-group">
+<label for="medicalaid">Medical Aid Name</label>
+<input type="text" id="medicalaid" name="medicalaid">
+</div>
+
+<div class="form-group">
+<label for="membership">Membership Number</label>
+<input type="text" id="membership" name="membership">
+</div>
+
+<div class="form-group">
+<label for="privatepay">Are you paying privately?</label>
+<select id="privatepay" name="privatepay" required>
+<option value="">Select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+</div>
+
+<button type="submit" class="btn btn-primary full-btn">
+Submit Details
+</button>
+
+</form>
+
+</div>
+</section>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Information Form | Dr. Taylor GP</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">Dr. Taylor GP</a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="booking.html">Book Appointment</a></li>
+    <li><a href="patient-portal.html">Patient Portal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-btn" id="closeMenu">&times;</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="booking.html">Book Appointment</a></li>
+    <li><a href="patient-portal.html">Patient Portal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<section class="section section-light">
+<h2>Patient Information Form</h2>
+
+<div class="form-container card">
+
+<form action="process-patient-info.php" method="POST">
+
+<h3>Personal Details</h3>
+
+<div class="form-group">
+<label for="pi_fullname">Full Name</label>
+<input type="text" id="pi_fullname" name="fullname" required>
+</div>
+
+<div class="form-group">
+<label for="idnumber">ID Number</label>
+<input type="text" id="idnumber" name="idnumber" required>
+</div>
+
+<div class="form-group">
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob">
+</div>
+
+<div class="form-group">
+<label for="phone">Contact Number</label>
+<input type="tel" id="phone" name="phone" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email">
+</div>
+
+<div class="form-group">
+<label for="address">Residential Address</label>
+<input type="text" id="address" name="address">
+</div>
+
+<h3>Medical Information</h3>
+
+<div class="form-group">
+<label for="allergies">Allergies</label>
+<textarea id="allergies" name="allergies"></textarea>
+</div>
+
+<div class="form-group">
+<label for="medication">Current Medication</label>
+<textarea id="medication" name="medication"></textarea>
+</div>
+
+<div class="form-group">
+<label for="conditions">Chronic Conditions</label>
+<textarea id="conditions" name="conditions"></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary full-btn">
+Submit Information
+</button>
+
+</form>
+
+</div>
+</section>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
