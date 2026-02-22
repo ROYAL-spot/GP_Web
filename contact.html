@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Dr. Taylor GP</title>
-<link rel="stylesheet" href="assets\js\css\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Dr. Taylor GP</title>
+    <link rel="stylesheet" href="assets/js/css/styles.css">
 </head>
 <body>
 
@@ -37,52 +37,49 @@
   </ul>
 </div>
 
+
 <section class="section">
-<h2>Contact Our Practice</h2>
+    <div class="grid" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 30px;">
+        <div class="card">
+            <h3>Practice Details</h3>
+            <p><strong>Hours:</strong> Mon-Fri 08:00 - 17:00 | Sat 08:00 - 12:00</p>
+            <p><strong>Phone:</strong> 081 799 6763</p>
+            <p><strong>Email:</strong> info@drtaylorgp.co.za</p>
+            <p><strong>Address:</strong> Health Hub, Komani, 5319</p>
+        </div>
 
-<div class="grid">
-
-<div class="card">
-<h3>Practice Details</h3>
-<p><strong>Phone:</strong> 081 799 6763</p>
-<p><strong>Email:</strong> info@drtaylorgp.co.za</p>
-<p><strong>Address:</strong> Health Hub, Komani, 5319</p>
-</div>
-
-<div class="card">
-<h3>Send Us a Message</h3>
-
-<form action="thank-you.html" method="POST">
-
-<div class="form-group">
-<label for="contactName">Your Name</label>
-<input type="text" id="contactName" name="contactName" required>
-</div>
-
-<div class="form-group">
-<label for="contactEmail">Email</label>
-<input type="email" id="contactEmail" name="contactEmail" required>
-</div>
-
-<div class="form-group">
-<label for="contactMessage">Message</label>
-<textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
-</div>
-
-<button type="submit" class="btn btn-primary full-btn">
-Send Message
-</button>
-
-</form>
-
-</div>
-
-</div>
+        
+        <div class="card">
+            <h3>General Inquiries</h3>
+            <div class="disclaimer">
+                <strong>Important:</strong> Please do not send sensitive medical symptoms here. Use the Patient Portal for secure data.
+            </div>
+            <form action="thank-you.html" method="POST">
+                <input type="text" placeholder="Your Name" style="width: 100%; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                <input type="email" placeholder="Email Address" style="width: 100%; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                <textarea placeholder="How can we help?" style="width: 100%; height: 100px; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
 </section>
 
-<footer>
-<p>&copy; 2025 Dr. Taylor & Associates.</p>
-</footer>
+<section class="flex-container align-top">
+    <div class="content-left">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <strong>What should I bring to my first visit?</strong>
+            <p>Your ID, Medical Aid card, and a list of any current medications.</p>
+        </div>
+        <div class="faq-item">
+            <strong>How do I get my test results?</strong>
+            <p>The doctor will contact you directly for urgent results. Others can be viewed via the portal.</p>
+        </div>
+    </div>
+    <div class="image-right">
+        <img src="images/faq-icon.png" alt="FAQ Icon">
+    </div>
+</section>
 
 <script src="assets/js/main.js"></script>
 </body>

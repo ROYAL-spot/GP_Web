@@ -171,6 +171,110 @@ input:focus, select:focus, textarea:focus {
     width: 100%;
 }
 
+/* --- NEW LAYOUT CLASSES --- */
+
+/* Top Info Bar */
+.info-bar {
+    background: #f8f9fa;
+    padding: 12px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #eee;
+    color: var(--text-light);
+}
+
+/* Flexible Section: Text Left, Image Right */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+}
+
+.flex-container.align-top {
+    align-items: flex-start;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.image-right {
+    flex: 0 0 250px;
+}
+
+.image-right img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Services & Symptoms List */
+.symptoms-grid {
+    column-count: 2;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* Portal Information Box */
+.portal-box {
+    background: #eef6ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 5px solid var(--primary);
+}
+
+.portal-box ol {
+    line-height: 2;
+    margin: 0;
+}
+
+/* Form Disclaimer */
+.disclaimer {
+    font-size: 0.85rem;
+    color: #b00020;
+    background: #fff5f5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcccc;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+}
+
+.faq-item strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+/* Responsive Stacking for Mobile */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-right {
+        order: -1; /* Image moves to top on mobile */
+        flex: 0 0 auto;
+        width: 180px;
+        margin: 0 auto;
+    }
+    .symptoms-grid {
+        column-count: 1;
+        text-align: left;
+    }
+}
+
+
 footer {
     text-align: center;
     padding: 40px;
